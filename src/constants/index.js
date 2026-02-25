@@ -1,3 +1,5 @@
+import profileImg from '../assets/images/profile.jpg';
+
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
   { name: 'About Me', href: '#about' },
@@ -16,7 +18,7 @@ export const HERO_DATA = {
 };
 
 export const ABOUT_DATA = {
-  image: "/src/assets/images/profile.jpg",
+  image: profileImg,
   stats: [
     { label: "Years Experience", value: "2+" },
     { label: "Projects Completed", value: "15+" },
