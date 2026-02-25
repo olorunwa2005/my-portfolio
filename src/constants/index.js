@@ -40,7 +40,7 @@ export const PROJECTS_DATA = [
     description: "A sustainable energy monitoring dashboard with real-time data visualization and smart grid management.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
     tags: ["React", "Tailwind", "Recharts", "Framer Motion"],
-    demo: "https://github.com/olorunwa2005",
+    demo: "https://eco-sphere-dashboard.vercel.app/",
     github: "https://github.com/olorunwa2005"
   },
   {
