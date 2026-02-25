@@ -40,75 +40,75 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-24 relative overflow-hidden bg-slate-950/20">
+        <section id="contact" className="py-20 relative overflow-hidden bg-slate-950/20">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-diamond/5 rounded-full blur-[150px] -z-10 animate-pulse-slow"></div>
 
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 md:mb-20">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <span className="text-diamond font-mono text-sm tracking-[0.3em] uppercase mb-4 block">Get In Touch</span>
-                        <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+                        <span className="text-diamond font-mono text-[10px] md:text-sm tracking-[0.3em] uppercase mb-4 block">Get In Touch</span>
+                        <h2 className="text-3xl md:text-6xl font-bold mb-6 tracking-tight">
                             Let's Work <span className="text-diamond">Together</span>
                         </h2>
-                        <p className="text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                        <p className="text-slate-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
                             Have a project in mind or just want to chat? Feel free to reach out. I'm always open to new opportunities and collaborations.
                         </p>
                     </motion.div>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-start">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
                     {/* Contact Info */}
-                    <div className="space-y-12">
+                    <div className="space-y-8 md:space-y-12">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="space-y-10"
+                            className="space-y-6 md:space-y-10"
                         >
-                            <h3 className="text-3xl font-bold">Contact Information</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold">Contact Information</h3>
 
-                            <div className="space-y-8">
-                                <div className="flex items-center gap-6 group cursor-pointer">
-                                    <div className="w-16 h-16 rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
-                                        <Mail size={28} />
+                            <div className="space-y-6 md:space-y-8">
+                                <div className="flex items-center gap-4 md:gap-6 group cursor-pointer">
+                                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-[18px] md:rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
+                                        <Mail size={20} md={28} />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Email Me</p>
-                                        <p className="text-xl font-medium group-hover:text-diamond transition-colors">{CONTACT_DATA.email}</p>
+                                        <p className="text-[10px] text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Email Me</p>
+                                        <p className="text-base md:text-xl font-medium group-hover:text-diamond transition-colors truncate max-w-[200px] md:max-w-none">{CONTACT_DATA.email}</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-6 group cursor-pointer">
-                                    <div className="w-16 h-16 rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
-                                        <Phone size={28} />
+                                <div className="flex items-center gap-4 md:gap-6 group cursor-pointer">
+                                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-[18px] md:rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
+                                        <Phone size={20} md={28} />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Call Me</p>
-                                        <p className="text-xl font-medium group-hover:text-diamond transition-colors">{CONTACT_DATA.phone}</p>
+                                        <p className="text-[10px] text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Call Me</p>
+                                        <p className="text-base md:text-xl font-medium group-hover:text-diamond transition-colors">{CONTACT_DATA.phone}</p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-6 group">
-                                    <div className="w-16 h-16 rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
-                                        <MapPin size={28} />
+                                <div className="flex items-center gap-4 md:gap-6 group">
+                                    <div className="w-12 h-12 md:w-16 md:h-16 rounded-[18px] md:rounded-[22px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-diamond transition-all duration-500 group-hover:bg-diamond group-hover:text-white group-hover:scale-110">
+                                        <MapPin size={20} md={28} />
                                     </div>
                                     <div>
-                                        <p className="text-xs text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Location</p>
-                                        <p className="text-xl font-medium tracking-tight">{CONTACT_DATA.location}</p>
+                                        <p className="text-[10px] text-slate-500 uppercase font-bold tracking-[0.2em] mb-1">Location</p>
+                                        <p className="text-base md:text-xl font-medium tracking-tight">{CONTACT_DATA.location}</p>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
 
                         <div className="space-y-6">
-                            <h4 className="text-lg font-bold tracking-tight">Social Networks</h4>
-                            <div className="flex gap-5">
+                            <h4 className="text-base md:text-lg font-bold tracking-tight">Social Networks</h4>
+                            <div className="flex gap-4 md:gap-5">
                                 {CONTACT_DATA.socials.map((social, i) => (
                                     <motion.a
                                         key={i}
@@ -116,9 +116,9 @@ const Contact = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         whileHover={{ y: -5, scale: 1.1 }}
-                                        className="w-14 h-14 rounded-[18px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-slate-400 hover:text-diamond hover:border-diamond/40 transition-all duration-300"
+                                        className="w-12 h-12 md:w-14 md:h-14 rounded-[16px] md:rounded-[18px] glass dark:glass-dark border border-diamond/10 flex items-center justify-center text-slate-400 hover:text-diamond hover:border-diamond/40 transition-all duration-300"
                                     >
-                                        {socialIcons[social.platform]}
+                                        {React.cloneElement(socialIcons[social.platform], { size: 20 })}
                                     </motion.a>
                                 ))}
                             </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="p-8 md:p-12 glass dark:glass-dark rounded-[48px] border border-diamond/10 shadow-3xl relative overflow-hidden"
+                        className="p-6 md:p-12 glass dark:glass-dark rounded-[32px] md:rounded-[48px] border border-diamond/10 shadow-3xl relative overflow-hidden"
                     >
                         <form ref={form} onSubmit={sendEmail} className="space-y-8 relative z-10 transition-all duration-500">
                             {status.message && (

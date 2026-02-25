@@ -10,25 +10,25 @@ const chartData = skills.map(s => ({ subject: s.name, A: s.level, fullMark: 100 
 
 const Skills = () => {
     return (
-        <section id="skills" className="py-24 bg-slate-900/50">
+        <section id="skills" className="py-20 bg-slate-900/50">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-16">
+                <div className="text-center mb-12 md:mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-4xl font-bold mb-4"
+                        className="text-3xl md:text-5xl font-bold mb-4"
                     >
                         Technical <span className="text-diamond">Expertise</span>
                     </motion.h2>
-                    <p className="text-slate-400 max-w-2xl mx-auto">
+                    <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base">
                         I specialize in building performant, responsive, and visually stunning web interfaces using a modern front-end stack.
                     </p>
                 </div>
 
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                     {/* Skill Bars */}
-                    <div className="space-y-8">
+                    <div className="space-y-6 md:space-y-8 order-2 lg:order-1">
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={skill.name}
@@ -39,10 +39,10 @@ const Skills = () => {
                                 className="group"
                             >
                                 <div className="flex justify-between items-center mb-2">
-                                    <span className="font-semibold group-hover:text-diamond transition-colors">{skill.name}</span>
-                                    <span className="text-sm text-slate-500">{skill.level}%</span>
+                                    <span className="font-semibold text-sm md:text-base group-hover:text-diamond transition-colors">{skill.name}</span>
+                                    <span className="text-xs md:text-sm text-slate-500">{skill.level}%</span>
                                 </div>
-                                <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+                                <div className="h-1.5 md:h-2 w-full bg-slate-800 rounded-full overflow-hidden">
                                     <motion.div
                                         initial={{ width: 0 }}
                                         whileInView={{ width: `${skill.level}%` }}
@@ -54,19 +54,19 @@ const Skills = () => {
                             </motion.div>
                         ))}
 
-                        <div className="pt-8 grid grid-cols-2 gap-6">
-                            <div className="flex gap-4 items-start">
-                                <Globe className="text-diamond shrink-0" size={24} />
+                        <div className="pt-6 md:pt-8 grid grid-cols-2 gap-6">
+                            <div className="flex gap-3 md:gap-4 items-start">
+                                <Globe className="text-diamond shrink-0" size={20} md={24} />
                                 <div>
-                                    <h4 className="font-bold text-sm uppercase tracking-wide">Responsive Design</h4>
-                                    <p className="text-xs text-slate-500">Mobile-first, fluid layouts</p>
+                                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wide">Responsive Design</h4>
+                                    <p className="text-[10px] md:text-xs text-slate-500">Mobile-first, fluid layouts</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start">
-                                <Cpu className="text-diamond shrink-0" size={24} />
+                            <div className="flex gap-3 md:gap-4 items-start">
+                                <Cpu className="text-diamond shrink-0" size={20} md={24} />
                                 <div>
-                                    <h4 className="font-bold text-sm uppercase tracking-wide">Performance</h4>
-                                    <p className="text-xs text-slate-500">Asset optimization & lazy loading</p>
+                                    <h4 className="font-bold text-xs md:text-sm uppercase tracking-wide">Performance</h4>
+                                    <p className="text-[10px] md:text-xs text-slate-500">Asset optimization & lazy loading</p>
                                 </div>
                             </div>
                         </div>
@@ -77,14 +77,14 @@ const Skills = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="h-[400px] glass dark:glass-dark rounded-3xl p-6 flex flex-col items-center justify-center relative border border-diamond/10"
+                        className="h-[350px] md:h-[400px] glass dark:glass-dark rounded-3xl p-4 md:p-6 flex flex-col items-center justify-center relative border border-diamond/10 order-1 lg:order-2 mb-8 lg:mb-0"
                     >
                         <div className="absolute inset-0 bg-diamond/5 blur-3xl rounded-full"></div>
-                        <div className="w-full h-full min-h-[300px] relative z-20">
+                        <div className="w-full h-full min-h-[280px] md:min-h-[300px] relative z-20">
                             <ResponsiveContainer width="100%" height="100%">
-                                <RadarChart cx="50%" cy="50%" outerRadius="70%" data={chartData}>
+                                <RadarChart cx="50%" cy="50%" outerRadius="65%" data={chartData}>
                                     <PolarGrid stroke="#00BFFF22" />
-                                    <PolarAngleAxis dataKey="subject" tick={{ fill: '#94a3b8', fontSize: 12 }} />
+                                    <PolarAngleAxis dataKey="subject" tick={{ fill: '#94a3b8', fontSize: 10 }} />
                                     <Radar
                                         name="Proficiency"
                                         dataKey="A"
@@ -95,7 +95,7 @@ const Skills = () => {
                                 </RadarChart>
                             </ResponsiveContainer>
                         </div>
-                        <p className="text-xs text-slate-500 mt-4 italic text-center px-8">
+                        <p className="text-[10px] md:text-xs text-slate-500 mt-4 italic text-center px-4 md:px-8">
                             "Strong layout control • Component-based architecture • Advanced responsive design"
                         </p>
                     </motion.div>

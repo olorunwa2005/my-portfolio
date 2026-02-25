@@ -8,19 +8,19 @@ const projects = PROJECTS_DATA;
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-24 relative">
+        <section id="projects" className="py-20 relative">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 gap-8">
                     <div>
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-4xl font-bold mb-4"
+                            className="text-3xl md:text-5xl font-bold mb-4"
                         >
                             Featured <span className="text-diamond">Projects</span>
                         </motion.h2>
-                        <p className="text-slate-400 max-w-xl">
+                        <p className="text-slate-400 max-w-xl text-sm md:text-base">
                             A selection of my recent work where I combine design aesthetics with robust technical implementation.
                         </p>
                     </div>
@@ -28,13 +28,13 @@ const Projects = () => {
                         href="https://github.com/olorunwa2005"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-outline border-none text-slate-500 hover:text-diamond transition-colors py-2 px-0"
+                        className="btn-outline border-none text-slate-500 hover:text-diamond transition-colors py-2 px-0 text-sm"
                     >
                         View All Projects →
                     </a>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
                     {projects.map((project, index) => (
                         <motion.div
                             key={project.title}
@@ -49,7 +49,7 @@ const Projects = () => {
                             <div className="absolute -inset-2 bg-gradient-to-r from-diamond/20 to-blue-500/20 rounded-[32px] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                             <div className="relative glass dark:glass-dark rounded-[30px] overflow-hidden flex flex-col border border-white/5 group-hover:border-diamond/30 transition-all duration-500 h-full">
-                                <div className="relative h-60 overflow-hidden">
+                                <div className="relative h-48 md:h-60 overflow-hidden">
                                     <img
                                         src={project.image}
                                         alt={project.title}
@@ -60,18 +60,18 @@ const Projects = () => {
                                     {/* Project Tags Overlay */}
                                     <div className="absolute top-4 left-4 flex flex-wrap gap-2">
                                         {project.tags.slice(0, 2).map(tag => (
-                                            <span key={tag} className="text-[10px] uppercase font-bold tracking-widest px-3 py-1 bg-slate-950/80 backdrop-blur-md rounded-full text-diamond border border-diamond/20">
+                                            <span key={tag} className="text-[9px] md:text-[10px] uppercase font-bold tracking-widest px-3 py-1 bg-slate-950/80 backdrop-blur-md rounded-full text-diamond border border-diamond/20">
                                                 {tag}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
 
-                                <div className="p-8 flex flex-col flex-grow">
-                                    <h3 className="text-2xl font-bold mb-3 group-hover:text-diamond transition-colors tracking-tight">
+                                <div className="p-6 md:p-8 flex flex-col flex-grow">
+                                    <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-diamond transition-colors tracking-tight">
                                         {project.title}
                                     </h3>
-                                    <p className="text-slate-400 text-sm mb-8 flex-grow leading-relaxed">
+                                    <p className="text-slate-400 text-xs md:text-sm mb-6 md:mb-8 flex-grow leading-relaxed">
                                         {project.description}
                                     </p>
 

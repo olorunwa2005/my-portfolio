@@ -56,7 +56,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-6xl md:text-9xl font-black mb-8 tracking-tighter leading-none"
+                    className="text-5xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter leading-none"
                 >
                     {HERO_DATA.title.split(' ')[0]} <br className="md:hidden" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-diamond via-blue-400 to-diamond-accent animate-gradient-x">
@@ -69,7 +69,7 @@ const Hero = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.4 }}
-                        className="text-xl md:text-3xl text-slate-400 font-light max-w-2xl"
+                        className="text-lg md:text-2xl text-slate-400 font-light max-w-2xl px-4"
                     >
                         {HERO_DATA.subtitle}
                     </motion.p>
