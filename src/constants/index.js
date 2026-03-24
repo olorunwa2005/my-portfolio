@@ -31,6 +31,11 @@ export const SKILLS_DATA = [
   { name: 'Tailwind', level: 100 },
   { name: 'JavaScript', level: 97 },
   { name: 'React.js', level: 83 },
+  { name: 'TypeScript', level: 99 },
+  { name: 'Next.js', level: 89 },
+  { name: 'Node.js', level: 100 },
+  { name: 'Express.js', level: 100 },
+  { name: 'Vue', level: 99 },
   { name: 'Bootstrap', level: 60 },
 ];
 
@@ -48,7 +53,7 @@ export const PROJECTS_DATA = [
     description: "Premium fashion marketplace featuring high-performance image optimization and seamless checkout flow.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2089&auto=format&fit=crop",
     tags: ["Next.js", "Shadcn UI", "Stripe", "Supabase"],
-    demo: "https://github.com/olorunwa2005",
+    demo: "https://nova-ecommerce-one.vercel.app/",
     github: "https://github.com/olorunwa2005"
   },
   {
@@ -56,7 +61,7 @@ export const PROJECTS_DATA = [
     description: "End-to-end encrypted messaging application with focus on privacy and minimalist user interface.",
     image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2070&auto=format&fit=crop",
     tags: ["React", "WebRTC", "Socket.io", "Tailwind"],
-    demo: "https://github.com/olorunwa2005",
+    demo: "https://cipher-messenger-ot3cau0dt-oyetayo-justices-projects.vercel.app/chat",
     github: "https://github.com/olorunwa2005"
   }
 ];
