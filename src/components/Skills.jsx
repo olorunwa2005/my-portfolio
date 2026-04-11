@@ -77,7 +77,7 @@ const Skills = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="h-[300px] sm:h-[350px] md:h-[400px] glass dark:glass-dark rounded-3xl p-4 md:p-6 flex flex-col items-center justify-center relative border border-diamond/10 order-1 lg:order-2 mb-8 lg:mb-0"
+                        className="h-[350px] md:h-[400px] glass dark:glass-dark rounded-3xl p-4 md:p-6 flex flex-col items-center justify-center relative border border-diamond/10 order-1 lg:order-2 mb-8 lg:mb-0"
                     >
                         <div className="absolute inset-0 bg-diamond/5 blur-3xl rounded-full"></div>
                         <div className="w-full h-full min-h-[280px] md:min-h-[300px] relative z-20">

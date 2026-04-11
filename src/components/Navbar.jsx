@@ -38,8 +38,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 </motion.a>
 
                 {/* Desktop Menu */}
-                <div className="hidden xl:flex items-center gap-8">
-                    <div className="flex gap-10">
+                <div className="hidden lg:flex items-center gap-8">
+                    <div className="flex gap-8">
                         {navLinks.map((link) => (
                             <motion.a
                                 key={link.name}
@@ -65,7 +65,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="xl:hidden flex items-center gap-4">
+                <div className="lg:hidden flex items-center gap-4">
                     <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -83,7 +83,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="xl:hidden glass border-t border-white/5 overflow-hidden"
+                        className="lg:hidden glass border-t border-white/5 overflow-hidden"
                     >
                         <div className="p-8 flex flex-col gap-6 text-center">
                             {navLinks.map((link) => (
