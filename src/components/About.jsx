@@ -20,7 +20,7 @@ const About = () => {
                     className="relative group mb-12 md:mb-0"
                 >
                     <div className="absolute -inset-4 bg-gradient-to-tr from-diamond/20 to-transparent rounded-2xl blur-xl group-hover:from-diamond/40 transition-all duration-500"></div>
-                    <div className="relative aspect-[3/4] max-w-[320px] md:max-w-[400px] mx-auto rounded-xl overflow-hidden glass dark:glass-dark border-4 border-white shadow-2xl animate-float">
+                    <div className="relative aspect-[3/4] w-full max-w-[280px] sm:max-w-[320px] md:max-w-[400px] mx-auto rounded-xl overflow-hidden glass dark:glass-dark border-4 border-white shadow-2xl animate-float">
                         <img
                             src={ABOUT_DATA.image}
                             alt="Justice"

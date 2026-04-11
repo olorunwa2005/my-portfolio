@@ -6,7 +6,7 @@ import CV from './CV';
 
 const Hero = () => {
     return (
-        <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+        <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20 md:pt-0">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-slate-950"></div>
@@ -38,7 +38,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <span className="inline-block px-4 py-1.5 rounded-full border border-diamond/30 bg-diamond/5 text-diamond text-xs font-bold uppercase tracking-[0.2em] mb-8">
+                    <span className="inline-block px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-diamond/30 bg-diamond/5 text-diamond text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-6 md:mb-8">
                         Available for new projects
                     </span>
                 </motion.div>
@@ -56,9 +56,9 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-5xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter leading-none"
+                    className="text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black mb-6 md:mb-8 tracking-tighter leading-none"
                 >
-                    {HERO_DATA.title.split(' ')[0]} <br className="md:hidden" />
+                    {HERO_DATA.title.split(' ')[0]} <br className="sm:hidden" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-diamond via-blue-400 to-diamond-accent animate-gradient-x">
                         {HERO_DATA.title.split(' ')[1]}
                     </span>
