@@ -61,7 +61,7 @@ export const PROJECTS_DATA = [
     description: "End-to-end encrypted messaging application with focus on privacy and minimalist user interface.",
     image: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2070&auto=format&fit=crop",
     tags: ["React", "WebRTC", "Socket.io", "Tailwind"],
-    demo: "https://cipher-messenger-ot3cau0dt-oyetayo-justices-projects.vercel.app/chat",
+    demo: "https://cipher-messenger.vercel.app/chat",
     github: "https://github.com/olorunwa2005"
   }
 ];
