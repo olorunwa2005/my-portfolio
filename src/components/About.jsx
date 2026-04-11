@@ -41,12 +41,12 @@ const About = () => {
                             <span className="text-diamond font-mono text-xl">01.</span> About Me
                         </h2>
 
-                        <p className="text-lg md:text-xl text-white font-medium leading-relaxed">
-                            I am a <span className="text-diamond">Front-End Developer</span> specializing in modern UI/UX. I focus on creating digital experiences that are not only beautiful but also highly functional.
+                        <p className="text-lg md:text-xl text-slate-900 dark:text-white font-medium leading-relaxed uppercase">
+                            I am a <span className="text-diamond font-black">Front-End Developer</span> specializing in modern UI/UX. I focus on creating digital experiences that are not only beautiful but also highly functional.
                         </p>
 
-                        <p className="text-base md:text-lg text-slate-400 leading-relaxed">
-                            With a strong foundation in <span className="text-white">HTML, CSS, and Tailwind</span>, I build responsive and interactive web applications that scale. I believe in clean code, modular architecture, and performance-first development.
+                        <p className="text-base md:text-lg text-slate-500 dark:text-slate-400 leading-relaxed font-medium">
+                            With a strong foundation in <span className="text-blue-900 dark:text-white font-bold">HTML, CSS, and Tailwind</span>, I build responsive and interactive web applications that scale. I believe in clean code, modular architecture, and performance-first development.
                         </p>
 
                         <p className="text-base md:text-lg text-slate-400 leading-relaxed">
